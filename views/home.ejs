@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Analysis tool</title>
+    <link rel="stylesheet" href="css/style.css" >
+    
+</head>
+
+<body>
+   <p>creating my first analytical tool with API</p>
+
+    <div class="box_1">
+        Analysis Tool
+    </div>
+<br>
+
+    <div class="overall;">
+
+        <div class="box1">
+
+            <p>API</p>
+
+            <select id = "myList" class="dropdown-content">
+                <option value="" selected="selected">Select one</option>
+            </select>
+
+            <p>
+                <input 
+                type="text" id="Keyword" style=" width: 110px; height: 25px;" placeholder="Keyword"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) 
+                || (event.charCode > 96 && event.charCode < 123)
+                || event.charCode ==32"
+                >
+            </p>
+
+            <p>
+                <button type="button" id="fetch" class="button1" onclick="fetcher()" >Fetch Data</button>
+            </p>
+
+
+        </div>
+
+        <div class="box2">
+
+            <p>Columns &emsp; &emsp; &emsp; Summary</p>
+
+            <select id = "Column" class="dropdown-content">
+                <option value="" selected="selected">All</option>
+            </select>
+
+            <select id = "Formula" class="dropdown-content" style="display:inline;">
+               <option value = "All"                >All</option>
+               <option value = "Sum"                >Sum</option>
+               <option value = "Mean"               >Mean</option>
+               <option value = "Median"             >Median</option>
+               <option value = "Standard Deviation" >Standard Deviation</option>
+               <option value = "Null Count"         >Null Count</option>
+               <option value = "Count"              >Count</option>
+               <!-- <option value = "Distinct Count"     >Distinct Count</option> -->
+            </select>
+
+            <br>
+            <br>
+            <p>
+                <button type="button" id="Stats" class="button">Get Stats</button>
+            </p>
+
+        </div>
+
+    </div>
+
+<br>
+
+    <div class="box3" id="output">
+        <p id="op1"><b>Output</b></p>
+        <p id="op2"></p>
+    </div>
+
+    <script type="text/javascript" src="js/new.js"></script>
+</body>
+</html>
