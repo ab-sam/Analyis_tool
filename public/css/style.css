@@ -1,0 +1,105 @@
+#box{
+    width:100px;
+    height:150px;
+    border:2px solid #000;
+    display: flex;
+}
+
+.box_1{
+    width:530px;
+    height:30px;
+    border:2px solid #000;
+    background-color: #ff1a1a;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: #fff;
+}
+.overall{
+    width: 100%;
+    font-family: Verdana, sans-serif;
+}
+
+.box1{
+    margin-left:30px;
+    width: 150px;
+    height: 200px;
+    float: left;
+    border:2px solid #000;
+    background: #c2c2d6;
+    text-align: center;
+}
+
+.box2{
+    margin-left:200px;
+    width: 300px;
+    height: 200px;
+    border:2px solid #000;
+    background: #c2c2d6;
+    text-align: center;
+}
+
+.box3{
+    margin-left:30px;
+    width: 470px;
+    height: 150px;
+    border:2px solid #000;
+    font-family: Verdana, sans-serif;
+}
+
+
+.dropdown-content {
+  background-color: #ffe6e6;
+  min-width: 120px;
+  min-height: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.button1 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ff0000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+}
+
+.button1:hover {background-color: #bfbfbf}
+
+.button1:active {
+  background-color: #f2f2f2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size:16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ff0000;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 6px #999;
+}
+
+.button:hover {background-color: #bfbfbf}
+
+.button:active {
+  background-color: #f2f2f2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+th, td{
+  border: 1px solid wheat;
+  padding: 5px;
+}
